@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class HelloTest {
 
-    @Value("${dev.desc}")
+    @Value("${devp.desc}")
     private String desc;
 
     @RequestMapping("/hello/test")
