@@ -1,0 +1,21 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: spring-cloud-config-server
+  #使用本地属性文件
+  #profiles:
+   # active: native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chengm119/SpringCloud.git
+          searchPaths: config-repo
+          username: chengm119
+          password: chengm1994
+          default-label: master
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/   ## 注册中心eurka地址
