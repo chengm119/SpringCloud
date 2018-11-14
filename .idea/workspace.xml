@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="becb8e98-f6c6-4290-85de-5b2f7ec5d186" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/controller/HelloTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zuul/src/main/java/cn/antiy/ZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zuul/src/main/java/cn/antiy/filter/AccessFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Zuul/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigClient/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/ConfigClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/ConfigClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/controller/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/controller/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/controller/HelloTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigClient/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigClient/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigClient/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigClient/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigClient/target/classes/cn/antiy/ConfigClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/target/classes/cn/antiy/ConfigClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigClient/target/classes/cn/antiy/controller/HelloTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigClient/target/classes/cn/antiy/controller/HelloTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigClient/target/classes/config.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/java/cn/antiy/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/java/cn/antiy/ConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/target/classes/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,6 +34,7 @@
     <ignored path="$PROJECT_DIR$/Config-Client/target/" />
     <ignored path="$PROJECT_DIR$/ConfigServer/target/" />
     <ignored path="$PROJECT_DIR$/ConfigClient/target/" />
+    <ignored path="$PROJECT_DIR$/Zuul/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,50 +135,52 @@
     <session id="1618947565">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="8" />
+          <entry key="java" value="10" />
+          <entry key="json" value="1" />
           <entry key="pom" value="1" />
           <entry key="properties" value="3" />
-          <entry key="xml" value="9" />
-          <entry key="yml" value="9" />
+          <entry key="xml" value="14" />
+          <entry key="yml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="10" />
+          <entry key="JSON" value="1" />
           <entry key="Properties" value="3" />
-          <entry key="XML" value="10" />
-          <entry key="YAML" value="9" />
+          <entry key="XML" value="15" />
+          <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="java" value="179" />
+          <entry key="java" value="276" />
           <entry key="properties" value="10" />
-          <entry key="xml" value="87" />
-          <entry key="yml" value="264" />
+          <entry key="xml" value="122" />
+          <entry key="yml" value="474" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="179" />
+          <entry key="JAVA" value="276" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Properties" value="10" />
-          <entry key="XML" value="87" />
-          <entry key="YAML" value="264" />
+          <entry key="XML" value="122" />
+          <entry key="YAML" value="474" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.mvc.usages" />
@@ -184,67 +195,43 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Eureka/src/main/java/cn/antiy/EurekaApplication.java">
+        <entry file="file://$PROJECT_DIR$/Zuul/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="289">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConfigServer/src/main/java/cn/antiy/ConfigServerApplication.java">
+        <entry file="file://$PROJECT_DIR$/ConfigClient/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Zuul/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/resources/bootstrap.yml">
+        <entry file="file://$PROJECT_DIR$/Zuul/src/main/java/cn/antiy/ZuulApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/ConfigClientApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/controller/HelloTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#237#238#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -289,13 +276,18 @@
         <option value="$PROJECT_DIR$/config/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/Config-Client/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
         <option value="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/controller/Test.java" />
-        <option value="$PROJECT_DIR$/ConfigClient/pom.xml" />
         <option value="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/ConfigClientApplication.java" />
-        <option value="$PROJECT_DIR$/ConfigClient/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/ConfigClient/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/controller/HelloTest.java" />
+        <option value="$PROJECT_DIR$/ConfigClient/pom.xml" />
+        <option value="$PROJECT_DIR$/ConfigClient/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/ConfigClient/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ConfigServer/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/Zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/Zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/Zuul/src/main/java/cn/antiy/filter/AccessFilter.java" />
+        <option value="$PROJECT_DIR$/Zuul/src/main/java/cn/antiy/ZuulApplication.java" />
       </list>
     </option>
   </component>
@@ -317,7 +309,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -759,78 +751,25 @@
             <path>
               <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antiy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antiy" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -838,7 +777,7 @@
             <path>
               <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -847,7 +786,7 @@
             <path>
               <item name="Spring-Cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spring-Cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigServer" type="462c0819:PsiDirectoryNode" />
+              <item name="Zuul" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -878,7 +817,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542101475224" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542188128422" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -887,11 +826,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Git\Spring-Cloud\Zuul\src\main\resources" />
       <recent name="E:\Git\Spring-Cloud\ConfigClient\src\main\resources" />
       <recent name="E:\Git\Spring-Cloud\config\src\main\resources" />
       <recent name="E:\SpringCloud\View\src\main\resources" />
       <recent name="E:\Git\SpringCloud\Managerment\src\main\resources" />
-      <recent name="E:\Git\SpringCloud\Eureka\src\main\java\cn\antiy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -906,7 +845,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigClientApplication">
+  <component name="RunManager" selected="Spring Boot.ZuulApplication">
     <configuration name="ViewApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.antiy.ViewApplication" />
       <module name="View" />
@@ -979,6 +918,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.antiy.ZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.ManagermentApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
@@ -986,13 +932,14 @@
       <item itemvalue="Application.ViewApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.ConfigClientApplication" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ConfigClientApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
-        <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Application.ViewApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Spring Boot.ViewApplication" />
       </list>
     </recent_temporary>
@@ -1017,19 +964,20 @@
       <workItem from="1542074913922" duration="1265000" />
       <workItem from="1542076221246" duration="68000" />
       <workItem from="1542076321110" duration="161000" />
-      <workItem from="1542076509909" duration="19945000" />
+      <workItem from="1542076509909" duration="20581000" />
+      <workItem from="1542157616250" duration="14101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45802000" />
+    <option name="totallyTimeSpent" value="60539000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" sideWeight="0.5005429" side_tool="true" weight="0.282516" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4990403" visible="true" weight="0.282516" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4990403" visible="true" weight="0.2857143" />
       <window_info id="Structure" order="2" sideWeight="0.5005429" side_tool="true" weight="0.282516" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -1040,7 +988,7 @@
       <window_info anchor="bottom" id="Spring" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.43431053" />
+      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.39522257" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -1129,9 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,9 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,23 +1108,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="65" lean-forward="true" selection-end-line="19" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/dev.properties" />
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/bootstrap.properties" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -1194,9 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,9 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1224,13 +1146,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/resources/config.properties" />
     <entry file="file://$PROJECT_DIR$/Eureka/src/main/java/cn/antiy/EurekaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1238,68 +1154,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigClient/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigServer/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/ConfigServer/src/main/java/cn/antiy/ConfigServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="102">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/ConfigClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/controller/HelloTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="272">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator-autoconfigure/2.0.0.RELEASE/spring-boot-actuator-autoconfigure-2.0.0.RELEASE.jar!/META-INF/spring-configuration-metadata.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigServer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/java/cn/antiy/ConfigClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigServer/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="272">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ConfigClient/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConfigClient/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zuul/src/main/java/cn/antiy/filter/AccessFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding>
+            <element signature="e#148#149#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zuul/src/main/java/cn/antiy/ZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: spring-cloud-service-zuul
+zuul:
+  prefix: /api
+  routes:
+    consumer:
+      path: /consumer/**
+      serviceId: spring-cloud-config-client
+    producer:
+      path: /producer/**
+      serviceId: spring-cloud-config-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

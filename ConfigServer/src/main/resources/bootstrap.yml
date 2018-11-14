@@ -15,7 +15,17 @@ spring:
           username: chengm119
           password: chengm1994
           default-label: master
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123456
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8000/eureka/   ## 注册中心eurka地址
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

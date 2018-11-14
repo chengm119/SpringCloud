@@ -16,6 +16,7 @@
         <module>View</module>
         <module>ConfigServer</module>
         <module>ConfigClient</module>
+        <module>Zuul</module>
     </modules>
 
     <parent>
