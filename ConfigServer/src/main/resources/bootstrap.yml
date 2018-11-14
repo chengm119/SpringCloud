@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8001
 spring:
   application:
     name: spring-cloud-config-server
@@ -15,6 +15,11 @@ spring:
           username: chengm119
           password: chengm1994
           default-label: master
+  rabbitmq:
+    host: 106.14.116.180
+    port: 5672
+    username: admin
+    password: 123456
 eureka:
   client:
     serviceUrl:
@@ -23,4 +28,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: bus-refresh

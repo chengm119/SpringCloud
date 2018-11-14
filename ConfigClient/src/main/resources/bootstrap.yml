@@ -1,11 +1,9 @@
 spring:
-  application:
-    name: spring-cloud-config-client
   cloud:
     config:
       name: spring-cloud
       profile: dev
-      lable: master
+      #label: master
       discovery:
         enabled: true
         serviceId: spring-cloud-config-server
