@@ -16,7 +16,7 @@ spring:
           password: chengm1994
           default-label: master
   rabbitmq:
-    host: 127.0.0.1
+    host: 106.14.116.180
     port: 5672
     username: admin
     password: 123456

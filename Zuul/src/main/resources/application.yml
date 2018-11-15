@@ -3,6 +3,11 @@ server:
 spring:
   application:
     name: spring-cloud-service-zuul
+  zipkin:
+    base-url: http://localhost:9009
+  sleuth:
+    sampler:
+      percentage: 1.0
 zuul:
   prefix: /api
   routes:

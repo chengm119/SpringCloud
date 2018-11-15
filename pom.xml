@@ -17,6 +17,7 @@
         <module>ConfigServer</module>
         <module>ConfigClient</module>
         <module>Zuul</module>
+        <module>ZipkinServer</module>
     </modules>
 
     <parent>

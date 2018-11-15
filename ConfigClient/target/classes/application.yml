@@ -9,10 +9,15 @@ spring:
       trace:
         enabled: true
   rabbitmq:
-    host: 127.0.0.1
+    host: 106.14.116.180
     port: 5672
     username: admin
     password: 123456
+  zipkin:
+    base-url: http://localhost:9009
+  sleuth:
+    sampler:
+      percentage: 1.0
 
 management:
   endpoints:

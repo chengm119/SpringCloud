@@ -11,6 +11,7 @@
         <module name="Eureka" />
         <module name="Managerment" />
         <module name="View" />
+        <module name="ZipkinServer" />
         <module name="Zuul" />
       </profile>
     </annotationProcessing>
